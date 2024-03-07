@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>FORMS</title>
+    <style>
+        .input-style input[type=text], select{
+            margin: 10px;
+            border: black 2px solid;
+        }
+
+        .border {
+            border: blue 5px solid !important;
+        }
+
+        .screen-sizing {
+            box-sizing: border-box !important;
+        }
+
+        label {
+            margin: 10px 0px;
+           
+        }
+
+    </style>
+    <script>
+
+        // For displaying
+        function printHTML(){
+            var first_name = document.getElementById('fname');
+            var last_name = document.getElementById('lname');
+            var address = document.getElementById('address');
+            var city = document.getElementById('city');
+
+            var isEmpty = false;
+
+            // For first name
+            if(first_name.value.trim() == ""){
+                isEmpty = true;
+                first_name.style.borderColor = "red";
+            } else {
+                first_name.style.borderColor = "black";
+            }
+
+            // For last name
+            if(last_name.value.trim() == ""){
+                isEmpty = true;
+                last_name.style.borderColor = "red";
+            } else {
+                last_name.style.borderColor = "black";
+            }
+
+            // For address
+            if(address.value.trim() == ""){
+                isEmpty = true;
+                address.style.borderColor = "red";
+            } else {
+                address.style.borderColor = "black";
+            }
+
+            // For city selection
+            if(city.value == "Select"){
+                isEmpty = true;
+                city.style.borderColor = "red";
+                document.getElementById('no-city').innerHTML = "*Please Choose a City";
+            } else {
+                city.style.borderColor = "black";
+                document.getElementById('no-city').innerHTML = "";
+            }
+
+            // Display if all requirements are met
+            if(isEmpty == false){
+                document.getElementById('user-name').innerHTML = first_name.value.trim() + " " + last_name.value.trim();
+                document.getElementById('user-address').innerHTML = address.value.trim();
+                document.getElementById('user-city').innerHTML = city.value;
+            } 
+            else {
+                document.getElementById('user-name').innerHTML = "";
+                document.getElementById('user-address').innerHTML = "";
+                document.getElementById('user-city').innerHTML = "";
+            }
+            
+        }
+
+        // For dropdown (loading the cities)
+        function load_cities(){
+            var cities = ["Alaminos","Angeles City","Antipolo","Bacolod","Bacoor","Bago","Baguio","Bais","Balanga","Baliwag","Batac","Batangas City","Bayawan","Baybay","Bayugan","Biñan","Bislig","Bogo","Borongan","Butuan","Cabadbaran","Cabanatuan","Cabuyao","Cadiz","Cagayan de Oro","Calaca","Calamba","Calapan","Calbayog","Caloocan","Candon","Canlaon","Carcar","Carmona","Catbalogan","Cauayan","Cavite City","Cebu City","Cotabato City","Dagupan","Danao","Dapitan","Dasmariñas","Davao City","Digos","Dipolog","Dumaguete","El Salvador","Escalante","Gapan","General Santos","General Trias","Gingoog","Guihulngan","Himamaylan","Ilagan","Iligan","Iloilo City","Imus","Iriga","Isabela","Kabankalan","Kidapawan","Koronadal","La Carlota","Lamitan","Laoag","Lapu-Lapu City","Las Piñas","Legazpi","Ligao","Lipa","Lucena","Maasin","Mabalacat","Makati","Malabon","Malaybalay","Malolos","Mandaluyong","Mandaue","Manila","Marawi","Marikina","Masbate City","Mati","Meycauayan","Muñoz","Muntinlupa","Naga","Naga","Navotas","Olongapo","Ormoc","Oroquieta","Ozamiz","Pagadian","Palayan","Panabo","Parañaque","Pasay","Pasig","Passi","Puerto Princesa","Quezon City","Roxas","Sagay","Samal","San Carlos","San Carlos","San Fernando","San Fernando","San Jose","San Jose del Monte","San Juan","San Pablo","San Pedro","Santa Rosa","Santo Tomas","Santiago","Silay","Sipalay","Sorsogon City","Surigao City","Tabaco","Tabuk","Tacloban","Tacurong","Tagaytay","Tagbilaran","Taguig","Tagum","Talisay","Talisay","Tanauan","Tandag","Tangub","Tanjay","Tarlac City","Tayabas","Toledo","Trece Martires","Tuguegarao","Urdaneta","Valencia","Valenzuela","Victorias","Vigan","Zamboanga City"];
+            var num_of_cities = cities.length;
+
+            var city = document.getElementById("city");
+
+            for(var i = 0; i < num_of_cities; i++){
+                city.innerHTML += '<option value="' + cities[i] + '">' + cities[i] + '</option>';
+            }
+        }
+    </script>
+</head>
+<body onload="load_cities()">
+    <div class="container-md">
+        <div class="row">
+            <div class="col-sm-6 input-style border">
+
+                <div class="row">
+                    <h2>PERSON INFORMATION</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4"><label for="fname">First Name:</label></div>
+                    <div class="col-sm-8"><input type="text" id="fname" placeholder="First Name"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4"><label for="lname">Last Name:</label></div>
+                    <div class="col-sm-8"><input type="text" id="lname" placeholder="Last Name"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4"><label for="address">Address:</label></div>
+                    <div class="col-sm-8"><input type="text" id="address" placeholder="Address"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-4"><label for="city">City:</label></div>
+                    <div class="col-sm-8">
+                        <select name="city" id="city">
+                            <option value="Select" selected disabled>Select</option>
+                        </select> <span id="no-city" style="color: red;"></span> <br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <input type="submit" value="Submit" onclick="printHTML()"> 
+                </div>
+                
+            </div>
+            <div class="col-sm-6 border">
+                    <h2>CONFIRM YOUR CONTACT INFO</h2>
+                    <span id="user-name"></span><br>
+                    <span id="user-address"></span><br>
+                    <span id="user-city"></span><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
