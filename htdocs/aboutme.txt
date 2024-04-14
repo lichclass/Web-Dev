@@ -1,0 +1,22 @@
+<h1>About Me</h1>
+    <p>Nash, born in the charming province of Dalaguete, grew up with a loving family that nurtured his 
+        curiosity and passion for learning. As he started his educational journey at a Catholic institution, 
+        Nash's interests and aspirations flourished, with a strong desire to become a soldier inspiring his young heart.
+    </p>
+
+    <p>Throughout his childhood, Nash was guided by the values instilled in him by his family and the lessons 
+        he learned at his Catholic institution. These teachings emphasized the importance of faith, compassion, 
+        and perseverance, which would later shape his character and help him overcome challenges.
+    </p>
+
+    <p>
+        As Nash approached high school, he did so with a sense of excitement and anticipation for the new experiences 
+        and opportunities that awaited him. His journey from his birth in the picturesque province of Dalaguete to the 
+        threshold of high school serves as a testament to the power of a loving family, a strong educational foundation, 
+        and the pursuit of one's dreams.
+    </p>
+
+    <p>
+        With the lessons he had learned and the support of his family, Nash entered high school, 
+        ready to embrace the adventures that lay ahead and to continue growing into the person he was destined to become.
+    </p>

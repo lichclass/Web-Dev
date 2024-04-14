@@ -1,0 +1,56 @@
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:900;
+    margin: 1v;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #939597;
+}
+
+/* div {
+    border: red 0.5px dashed; 
+}  */
+
+.outer-layer {
+    height: 100vh;
+}
+
+.add-bookmark-btn {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    right: 0;
+    position: fixed;
+}
+
+.bookmark-section {
+    height: 100%;
+}
+
+.bmarked-image {
+    height: 30%;
+    background-image: url("web-favicon/default-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.page-name {
+    font-size: 120%;
+    color: #363945;
+    padding: 10px;
+}
+
+input {
+    margin: 5px;
+    width: 70%;
+}
+
+label {
+    padding: 5px 5px;
+}

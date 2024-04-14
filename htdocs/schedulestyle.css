@@ -1,0 +1,65 @@
+/* FOR SCHEDULE */
+table {
+    margin: auto;
+    width: 100%;
+}
+
+table, tr, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+tr:hover {
+    background-color: white;
+    color: black;
+}
+
+#td_day {
+    font-weight: bold;
+}
+
+#CIS1201 {
+    background-color: #f08080;
+}
+
+#CIS1202 {
+    background-color: #add8e6;
+}
+
+#CIS1204 {
+    background-color: #faa07a;
+}
+
+#GEFEL {
+    background-color: #90ee90;
+}
+
+#CIS1205 {
+    background-color: #2eb2aa;
+}
+
+#CIS1203 {
+    background-color: #cd853f;
+}
+
+#EDM2 {
+    background-color: #d3d3d3;
+}
+
+#TPE1202 {
+    background-color: #ee82ee;
+}
+
+#CIS2106N {
+    background-color: #d2b48c;
+}
+
+#NSTP2 {
+    background-color: #f96347;
+}
+
+td {
+    padding: 15px;
+    font-weight: bold;
+}

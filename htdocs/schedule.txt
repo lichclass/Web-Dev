@@ -1,0 +1,116 @@
+<table id="schedule">
+    <tr>
+        <th>Day</th>
+        <th>07:30 AM - 08:00 AM</th>
+        <th>08:00 AM - 08:30 AM</th>
+        <th>08:30 AM - 09:00 AM</th>
+        <th>09:00 AM - 09:30 AM</th>
+        <th>09:30 AM - 10:00 AM</th>
+        <th>10:00 AM - 10:30 AM</th>
+        <th>10:30 AM - 11:00 AM</th>
+        <th>11:00 AM - 11:30 AM</th>
+        <th>11:30 AM - 12:00 PM</th>
+        <th>12:00 PM - 12:30 PM</th>
+        <th>12:30 PM - 01:00 PM</th>
+        <th>01:00 PM - 01:30 PM</th>
+        <th>01:30 PM - 02:00 PM</th>
+        <th>02:00 PM - 02:30 PM</th>
+        <th>02:30 PM - 03:00 PM</th>
+        <th>03:00 PM - 03:30 PM</th>
+        <th>03:30 PM - 04:00 PM</th>
+        <th>04:00 PM - 04:30 PM</th>
+        <th>04:30 PM - 05:00 PM</th>
+        <th>05:00 PM - 05:30 PM</th>
+        <th>05:30 PM - 06:00 PM</th>
+    </tr>
+    <tr>
+        <td id="td_day">Monday</td>
+        <td colspan="5" align="center" id="CIS1201">CIS 1201</td>
+        <td></td>
+        <td></td>
+        <td colspan="6" align="center" id="CIS1202">CIS 1202</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="3" align="center" id="CIS1204">CIS 1204</td>
+        <td colspan="2" align="center" id="GEFEL">GE-FEL TFL</td>
+    </tr>
+    <tr>
+        <td id="td_day">Tuesday</td>
+        <td colspan="7" align="center" id="CIS1205">CIS 1205</td>
+        <td colspan="3" align="center" id="CIS1203">CIS 1203</td>
+        <td colspan="3" align="center" id="EDM2">EDM 2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2" align="center" id="TPE1202">TPE 1202</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="td_day">Wednesday</td>
+        <td colspan="7" align="center" id="CIS1201">CIS 1201</td>
+        <td colspan="4" align="center" id="CIS1202">CIS 1202</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="3" align="center" id="CIS1204">CIS 1204</td>
+        <td colspan="2" align="center" id="GEFEL">GE-FEL TFL</td>
+    </tr>
+    <tr>
+        <td id="td_day">Thursday</td>
+        <td></td>
+        <td></td>
+        <td colspan="5" align="center" id="CIS1205">CIS 1205</td>
+        <td colspan="3" align="center" id="CIS1203">CIS 1203</td>
+        <td colspan="3" align="center" id="EDM2">EDM 2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2" align="center" id="TPE1202">TPE 1202</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="td_day">Friday</td>
+        <td colspan="6" align="center" id="CIS2106N">CIS 2106N</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td id="td_day">Saturday</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="6" align="center" id="NSTP2">NSTP 2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
